@@ -1,0 +1,29 @@
+body {
+  background: url("https://images.unsplash.com/photo-1594035519981-62c9cef33ca9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0NTQ4MTM3MXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60");
+  background-size: cover;
+}
+.block {
+  margin-top: 50px;
+  margin-left: 380px;
+  background-image: url ("bubble.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transition: transform 0.5s;
+  width: 400px;
+  height: 400px;
+}
+.block:hover {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: mymove;
+}
+
+@keyframes mymove {
+0% {left: 0px; top: 0px;}
+20% {left: 90px; top: 0px;}
+25% {left: 100px; top: 10px;}
+50% {left: 100px; top: 100px;}
+75% {left: 10px; top: 100px;}
+90% {left: 0px; top: 90px;}
+100% {left: 0px; top: 0px;}
